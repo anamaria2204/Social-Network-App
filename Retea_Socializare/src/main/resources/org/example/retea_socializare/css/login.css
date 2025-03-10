@@ -1,0 +1,64 @@
+/* Root pane styling */
+.root-pane {
+    -fx-background-color: linear-gradient(to bottom, #a362ea, #83a0d1); /* Gradient background */
+    -fx-padding: 20px;
+    -fx-font-family: 'Arial', sans-serif;
+}
+
+/* Welcome label styling */
+.welcome-label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0.5, 2, 2); /* Drop shadow effect */
+    -fx-padding: 10px;
+}
+
+/* Form grid styling */
+.form-grid {
+    -fx-background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    -fx-padding: 20px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-hgap: 10px;
+    -fx-vgap: 10px;
+}
+
+/* Form label styling */
+.form-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+    -fx-font-weight: bold;
+}
+
+/* Form input styling */
+.form-input {
+    -fx-font-size: 14px;
+    -fx-padding: 5px;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-background-color: white;
+}
+
+.form-input:focused {
+    -fx-border-color: #2575fc; /* Focused border color */
+    -fx-box-shadow: 0 0 5px rgba(37, 117, 252, 0.5); /* Glow effect on focus */
+}
+
+/* Login button styling */
+.login-button {
+    -fx-background-color: #9586da; /* Button color */
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 8px 16px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 3, 0.5, 2, 2); /* Shadow effect */
+}
+
+.login-button:hover {
+    -fx-background-color: #6a11cb; /* Button hover effect */
+}

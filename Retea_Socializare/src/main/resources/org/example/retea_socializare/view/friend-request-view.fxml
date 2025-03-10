@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="200.0" prefWidth="800.0" stylesheets="@../css/friend-request.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.retea_socializare.controller.FriendRequestController">
+   <children>
+      <SplitPane dividerPositions="0.5" orientation="HORIZONTAL" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+         <AnchorPane minHeight="0.0" minWidth="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label fx:id="labelUser" layoutX="5.0" layoutY="5.0" styleClass="table-title" />
+                  <TableView fx:id="tableViewFriendRequest" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+                    <columns>
+                      <TableColumn fx:id="tableColumnUser" prefWidth="136.20001524686813" text="User" />
+                      <TableColumn fx:id="tableColumnStatus" prefWidth="158.2000274658203" text="Status" />
+                    </columns>
+                      <columnResizePolicy>
+                          <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                      </columnResizePolicy>
+                  </TableView>
+               </children>
+         </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="315.0" styleClass="lable-right-pane-fr" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button layoutX="58.0" layoutY="101.0" mnemonicParsing="false" styleClass="button-send" text="Send friend request" onAction="#handleSendFriendRequestButton" />
+                  <ComboBox fx:id="comboBoxUsers" layoutX="191.0" layoutY="46.0" prefWidth="150.0"  />
+                  <Label layoutX="22.0" layoutY="45.0" styleClass="lable-right-pane-fr" text="Send friend request to: " />
+                  <Button layoutX="217.0" layoutY="101.0" mnemonicParsing="false" styleClass="button-send" text="Back to main window"  onAction="#handleExitButtonFR"/>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

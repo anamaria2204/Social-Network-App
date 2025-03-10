@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="root-pane" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.retea_socializare.controller.LoginController">
+   <children>
+      <!-- VBox for vertically aligned content -->
+      <VBox alignment="CENTER" spacing="20" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+
+         <!-- Title label styled with .title-label -->
+         <Label styleClass="welcome-label" text="Welcome to a different social media :)" />
+
+         <!-- Username input centered horizontally -->
+         <HBox alignment="CENTER" spacing="10">
+            <Label styleClass="form-label" text="Username:" />
+            <TextField fx:id="textFieldUsername_log" prefWidth="200" styleClass="form-input" />
+         </HBox>
+
+         <!-- Password input centered horizontally -->
+         <HBox alignment="CENTER" spacing="10">
+            <Label styleClass="form-label" text="Password:" />
+            <PasswordField fx:id="textFieldPassword_log" prefWidth="200" styleClass="form-input" />
+         </HBox>
+
+         <!-- Login Button styled with .blue-button -->
+         <Button onAction="#handelLoginButton" prefWidth="100" styleClass="login-button" text="Login" />
+
+         <!-- Sign Up section -->
+         <HBox alignment="CENTER" spacing="5">
+            <Label styleClass="form-label" text="Want an account?" />
+            <Button onAction="#handleSignUpButton" prefWidth="100" styleClass="login-button" text="Sign Up" />
+         </HBox>
+         <CheckBox fx:id="adminCheckBox" mnemonicParsing="false" text="Admin" />
+      </VBox>
+   </children>
+</AnchorPane>

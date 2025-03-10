@@ -1,0 +1,93 @@
+/* Apply blue to purple gradient background to the TableView */
+TableView {
+    -fx-background-color: linear-gradient(to bottom, #66b3b7, #b68fd7); /* Blue to Purple gradient */
+    -fx-border-color: #dcdcdc;  /* Light gray border around the table */
+    -fx-border-width: 1px;  /* Border width */
+    -fx-padding: 10px;
+    -fx-background-insets: 0, 1;
+    -fx-background-radius: 5px; /* Rounded corners for the TableView */
+}
+
+/* Style the TableColumn headers */
+TableColumn {
+    -fx-alignment: CENTER; /* Center the text in the columns */
+    -fx-font-size: 14px;  /* Font size for table column headers */
+    -fx-text-fill: white;  /* White text color for the column headers */
+    -fx-font-weight: bold;  /* Make column headers bold */
+    -fx-padding: 10px 15px; /* Padding for column headers */
+    -fx-background-color: linear-gradient(to bottom, #00c3a6, #6e42f2); /* Slightly darker background for headers */
+    -fx-background-radius: 5px;
+}
+
+/* Apply a gradient background to each TableCell */
+TableCell {
+    -fx-text-fill: white;  /* Text color for the cells */
+    -fx-font-size: 14px;  /* Font size for the cell text */
+    -fx-background-color: transparent; /* Cells have transparent background to show gradient */
+    -fx-padding: 5px; /* Padding inside cells */
+}
+
+TableCell:selected {
+    -fx-background-color: #b68fd7; /* Purple background for selected cells */
+    -fx-text-fill: white;  /* White text color when selected */
+}
+
+/* Add hover effect on table rows */
+TableRow {
+    -fx-background-color: transparent; /* Transparent background for rows */
+}
+
+TableRow:hover {
+    -fx-background-color: rgba(0, 0, 0, 0.1); /* Light gray background when hovering over a row */
+}
+
+/* Specific style for TableView with a blue-purple gradient */
+TableView > * {
+    -fx-background-color: transparent; /* Make sure all inner elements are transparent */
+}
+
+/* Additional customization for the row hover effect */
+TableRow:hover {
+    -fx-background-color: rgba(0, 0, 0, 0.1); /* Hover effect with light gray */
+}
+
+.table-title {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: black; /* Text color for better contrast */
+    -fx-background-color: linear-gradient(to right, #b2f2bb, #d0bdf4); /* Gradient background */
+    -fx-padding: 10px; /* Padding to make the label stand out */
+    -fx-alignment: center; /* Center the text within the label */
+    -fx-border-radius: 5px; /* Optional rounded corners */
+    -fx-background-radius: 5px;
+}
+
+.main-box{
+    -fx-background-color: linear-gradient(to right, #b2f2df, #d0bdf4); /* Gradient background */
+    -fx-padding: 10px; /* Padding to make the label stand out */
+    -fx-alignment: center; /* Center the text within the label */
+    -fx-border-radius: 5px; /* Optional rounded corners */
+    -fx-background-radius: 5px;
+}
+
+
+.button-style{
+    -fx-background-color: #bbb0ec; /* Button color */
+    -fx-text-fill: white;
+    -fx-font-size: 10px;
+    -fx-padding: 8px 16px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 3, 0.5, 2, 2); /* Shadow effect */
+}
+
+.format-l {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+    -fx-font-weight: bold;
+}
+
+
+

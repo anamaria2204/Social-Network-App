@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1200.0" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.retea_socializare.controller.MainController">
+   <children>
+      <SplitPane dividerPositions="0.3940486925157799" orientation="HORIZONTAL" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <!-- Left Panel -->
+         <AnchorPane minHeight="0.0" minWidth="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="10.0" layoutY="10.0" styleClass="table-title" text="Friend List" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                  <TableView fx:id="tableViewFriendship" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+                    <columns>
+                        <TableColumn fx:id="tableColumnUser1" text="User1" />
+                        <TableColumn fx:id="tableColumnUser2" text="User2" />
+                        <TableColumn fx:id="tableColumnSince" text="Since" />
+                    </columns>
+                      <columnResizePolicy>
+                          <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                      </columnResizePolicy>
+                  </TableView>
+               </children>
+          </AnchorPane>
+
+          <!-- Right Panel -->
+          <AnchorPane minHeight="0.0" minWidth="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <SplitPane dividerPositions="0.8" orientation="VERTICAL" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <!-- Top Section of Right Panel -->
+                      <AnchorPane minHeight="0.0" minWidth="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <TableView fx:id="tabelViewUtilizatori" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                  <columns>
+                                      <TableColumn fx:id="tableColumnFirstName" prefWidth="75.0" text="First Name" />
+                                      <TableColumn fx:id="tableColumnLastName" text="Last Name" />
+                                      <TableColumn fx:id="tableColumnUsername" text="Username" />
+                                  </columns>
+                                  <columnResizePolicy>
+                                      <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                  </columnResizePolicy>
+                              </TableView>
+                           </children>
+                      </AnchorPane>
+
+                      <!-- Bottom Section of Right Panel -->
+                      <AnchorPane minHeight="0.0" minWidth="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <HBox spacing="20.0" styleClass="main-box" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                <children>
+                                 <Button mnemonicParsing="false" styleClass="button-style" text="Delete friend" onAction="#handleDeleteButton"/>
+                                 <Button mnemonicParsing="false" onAction="#handleAddDeleteButton" styleClass="button-style" text="Accept/delete friend request" />
+                                    <Button mnemonicParsing="false" onAction="#handleFriendRequestButton" styleClass="button-style" text="Friend request" />
+                                    <Button mnemonicParsing="false" onAction="#handleRequestListButton" styleClass="button-style" text="Request list" />
+                                 <Button mnemonicParsing="false" onAction="#handleExitButton" styleClass="button-style" text="Exit" />
+                                </children>
+                            </HBox>
+                      </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+          </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

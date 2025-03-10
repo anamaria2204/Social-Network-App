@@ -1,0 +1,88 @@
+/* Apply baby blue to pastel pink gradient background to the TableView */
+TableView {
+    -fx-background-color: linear-gradient(to bottom, #a3d8f4, #f7c1c0); /* Baby blue to pastel pink gradient */
+    -fx-border-color: #dcdcdc;  /* Light gray border around the table */
+    -fx-border-width: 1px;  /* Border width */
+    -fx-padding: 10px;
+    -fx-background-insets: 0, 1;
+    -fx-background-radius: 5px; /* Rounded corners for the TableView */
+}
+
+/* Apply a gradient background to each TableCell */
+TableCell {
+    -fx-text-fill: #444444;  /* Text color for the cells */
+    -fx-font-size: 14px;  /* Font size for the cell text */
+    -fx-background-color: transparent; /* Cells have transparent background to show gradient */
+    -fx-padding: 5px; /* Padding inside cells */
+}
+
+TableCell:selected {
+    -fx-background-color: #f7c1c0; /* Pastel pink background for selected cells */
+    -fx-text-fill: #000000;  /* Black text color when selected for better contrast */
+}
+
+/* Add hover effect on table rows */
+TableRow {
+    -fx-background-color: transparent; /* Transparent background for rows */
+}
+
+TableRow:hover {
+    -fx-background-color: rgba(200, 200, 255, 0.2); /* Light transparent blue-purple hover effect */
+}
+
+/* Specific style for TableView with a baby blue-pink gradient */
+TableView > * {
+    -fx-background-color: transparent; /* Make sure all inner elements are transparent */
+}
+
+/* Title label above the TableView */
+.table-title {
+    -fx-font-size: 12px; /* Slightly larger font size */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-text-fill: black;
+    -fx-background-color: linear-gradient(to right, #2fa5e0, #faa7a5);
+    -fx-padding: 10px; /* Padding to make the label stand out */
+    -fx-alignment: center; /* Center the text within the label */
+    -fx-border-radius: 5px; /* Optional rounded corners */
+    -fx-background-radius: 5px;
+}
+
+.button-send{
+    -fx-background-color: #71d9ef; /* Button color */
+    -fx-text-fill: white;
+    -fx-font-size: 10px;
+    -fx-padding: 8px 16px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 3, 0.5, 2, 2); /* Shadow effect */
+}
+
+.right-pane-fr{
+    -fx-background-color: linear-gradient(to bottom, #a3d8f4, #f7c1c0); /* Baby blue to pastel pink gradient */
+    -fx-padding: 20px;
+}
+
+.lable-right-pane-fr {
+    -fx-font-size: 10px; /* Slightly larger font size */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-text-fill: black;
+    -fx-background-color: linear-gradient(to right, #a9ccf1, #f6c1bf);
+    -fx-padding: 5px; /* Padding to make the label stand out */
+    -fx-alignment: center; /* Center the text within the label */
+    -fx-border-radius: 5px; /* Optional rounded corners */
+    -fx-background-radius: 2px;
+}
+.button-add-de{
+    -fx-background-color: #efb4de; /* Button color */
+    -fx-text-fill: white;
+    -fx-font-size: 10px;
+    -fx-padding: 8px 16px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 3, 0.5, 2, 2);
+}
+

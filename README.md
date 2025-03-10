@@ -17,7 +17,7 @@ MAP_ToySocialNetwork is a simplified social network application designed to mana
 ### Pages & Events
 - Users can create and manage pages.
 - Implement the **Observer pattern** for event notifications:
-  - Subscribe/unsubscribe to events.
+  - Update messages between users
   - Notify users about new friendships
 
 ### Authentication

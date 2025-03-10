@@ -1,7 +1,7 @@
-# Social Network - MAP_ToySocialNetwork
+# Social Network - ToySocialNetwork
 
 ## Overview
-MAP_ToySocialNetwork is a simplified social network application designed to manage users, friendships, messaging, and events. The project focuses on essential social networking features while allowing further extensions over time.
+ToySocialNetwork is a simplified social network application designed to manage users, friendships, messaging, and events. The project focuses on essential social networking features while allowing further extensions over time.
 
 ## Features
 ### User Management
